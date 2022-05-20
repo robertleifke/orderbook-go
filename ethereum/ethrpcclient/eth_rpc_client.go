@@ -27,7 +27,7 @@ type Client interface {
 }
 
 // client is a Client through which _all_ Ethereum JSON-RPC requests should be routed through. It
-// enforces a max requestTimeout and also rate-limits requests
+// enforces max requestTimeout and rate-limits requests
 type client struct {
 	// rpcClient is the underlying RPC client or provider
 	rpcClient ethclient.RPCClient
