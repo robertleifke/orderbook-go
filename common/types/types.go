@@ -17,14 +17,6 @@ import (
 
 // Stats is the return value for core.GetStats. Also used in the browser interface.
 type Stats struct {
-	Version                           string      `json:"version"`
-	PubSubTopic                       string      `json:"pubSubTopic"`
-	Rendezvous                        string      `json:"rendezvous"`
-	SecondaryRendezvous               []string    `json:"secondaryRendezvous"`
-	PeerID                            string      `json:"peerID"`
-	EthereumChainID                   int         `json:"ethereumChainID"`
-	LatestBlock                       LatestBlock `json:"latestBlock"`
-	NumPeers                          int         `json:"numPeers"`
 	NumOrders                         int         `json:"numOrders"`
 	NumOrdersV4                       int         `json:"numOrdersV4"`
 	NumOrdersIncludingRemoved         int         `json:"numOrdersIncludingRemoved"`
